@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{% static 'catering/css/1.css' %}" rel="stylesheet" type="text/css">
+    <title>{% block title %}Главная{% endblock %}</title>
+    <style>
+        html {
+            background-image: url("{% static 'catering/bcg_img.jpg' %}");
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrapper">
+    <h1 class="visually-hidden">Название сайта</h1>
+    <header>
+        <nav class="main-nav">
+            <div class="menu-wrapper">
+                <div class="left-side">
+                    <label for="toggle" class="toggle-button" id="toggle">&#9776;</label>
+                    <a href="#" class="main-nav__write"><span class="helper"></span><img class="letter-image"
+                                                                                         src="{% static 'catering/letter-image.png' %}"
+                                                                                         alt="catering"></a>
+                </div>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link main-nav__link--first">Главная</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Услуги</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Меню</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">События</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Блог</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+    <div class="footer-wrapper">
+        <footer class="page-footer">
+            <div class=" page-footer__item address-info">
+                <p class="address-info__item">Название | Номер телефона</p>
+                <p class="address-info__item">Адрес</p>
+            </div>
+            <div class="page-footer__item socials">
+                <a class="socials__link" href="#">
+                    <img class="socials__social" src="{% static 'catering/vk.png' %}" alt="vk">
+                </a>
+                <a class="socials__link" href="#">
+                    <img class="socials__social socials__social--insta" src="{% static 'catering/insta.png' %}" alt="insta">
+                </a>
+                <a class="socials__link" href="#">
+                    <img class="socials__social socials__social--facebook" src="{% static 'catering/fb.png' %}" alt="fb">
+                </a>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="{% static 'catering/javascript/js.js' %}"></script>
+</body>
+</html>

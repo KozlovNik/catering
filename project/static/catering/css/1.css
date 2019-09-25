@@ -1,0 +1,43 @@
+@import url('base.css');
+@import url('navbar.css');
+
+.visually-hidden {
+    font-size: 0;
+    clip: rect(0, 0, 0, 0);
+}
+
+.footer-wrapper {
+    margin-top: 40px;
+    background-color: #000000;
+    width: 100%;
+    box-shadow: 0 1px 2px 1px rgba(255,80,0,1);
+    border-bottom: 2px solid rgba(255, 80, 0, 1);
+    border-top: 2px solid rgba(255, 80, 0, 1);
+}
+
+.page-footer {
+    display: flex;
+    margin: 0 auto;
+    height: 120px;
+    width: 940px;
+}
+
+.socials__social {
+    color: #1a1a1a;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.socials__social--insta {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-left: -5px;
+}
+
+@media only screen and (max-width: 939px) {
+    .page-footer {
+        width: 100%;
+    }
+}

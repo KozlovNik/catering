@@ -1,0 +1,144 @@
+.main-nav__write {
+    text-decoration: none;
+    color: #f7efff;
+    height: 100%;
+}
+
+.helper {
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+}
+
+.letter-image {
+    margin-left: 10px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.main-nav {
+    background-color: #141414;
+    box-shadow: 0 1px 2px 1px rgba(255,80,0,1);
+    border-bottom: 2px solid rgba(255, 80, 0, 1);
+    border-top: 2px solid rgba(255, 80, 0, 1);
+    height: 50px;
+}
+
+.menu-wrapper {
+    height: 100%;
+    margin: 0 auto;
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav__list {
+    justify-content: space-between;
+    display: flex;
+    align-items: stretch;
+}
+
+.main-nav__item {
+    margin: auto;
+    display: table;
+    text-align: center;
+}
+
+.main-nav__link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Courier New', serif;
+    display: table-cell;
+    padding: 2px 12px;
+    border-left: 1px solid white ;
+}
+
+.main-nav__link:hover {
+    transition-delay: 0.1s;
+    transition-duration: 0.15s;
+    color: #FF5000;
+}
+
+.main-nav__link--first {
+    border-color: transparent;
+}
+
+.main-nav__link--pressed {
+    color: #FF5000;
+}
+
+#toggle {
+    position: absolute;
+    display: none;
+}
+
+.toggle-button {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 939px) {
+    .menu-wrapper {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .menu-wrapper {
+        display: block;
+        width: 80%;
+        text-align: center;
+        height: 80px;
+    }
+
+    .helper {
+        display: none;
+    }
+
+    .main-nav {
+        height: 100%;
+    }
+
+    .main-nav__list {
+        margin: 0 auto;
+        top: 70px;
+        right: 15px;
+        width: 92%;
+        position: absolute;
+        background-color: black;
+        display: none;
+    }
+
+    .main-nav__item {
+        width: 100%;
+    }
+
+    #toggle {
+        display: block;
+    }
+
+    .main-nav__link {
+        padding: 10px 17px;
+        border: 1px solid rgb(255, 255, 255);
+        font: 16px Arial;
+        text-align: left;
+    }
+
+    .toggle-button {
+        right: 15px;
+        top: 15px;
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 4px;
+    }
+
+    .left-side {
+        height: 80px;
+        padding-top: 25px;
+    }
+}

@@ -1,0 +1,83 @@
+@import url('base.css');
+@import url('navbar.css');
+
+.visually-hidden {
+    font-size: 0;
+    clip: rect(0, 0, 0, 0);
+}
+
+.address-info {
+    padding-left: 12px;
+    width: 300px;
+}
+
+.footer-wrapper {
+    margin-top: 40px;
+    background-color: #000000;
+    width: 100%;
+    box-shadow: 0 1px 2px 1px rgba(255,80,0,1);
+    border-bottom: 2px solid rgba(255, 80, 0, 1);
+    border-top: 2px solid rgba(255, 80, 0, 1);
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 120px;
+    width: 940px;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials__social {
+    margin: auto;
+    vertical-align: middle;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+}
+
+.socials__social--insta {
+    margin-right:-5px;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.socials__social--facebook {
+    margin-top: 8px;
+    height: 35px;
+    width: 45px;
+}
+
+.address-info__item {
+    font-family: 'Courier New', serif;
+    font-weight: 700;
+    color: #f4fdff;
+}
+
+@media only screen and (max-width: 939px) {
+    .page-footer {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .page-footer {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .socials {
+        margin-top: 10px;
+    }
+
+    .address-info {
+        margin-bottom: 10px;
+    }
+}
