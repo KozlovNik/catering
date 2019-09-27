@@ -1,48 +1,53 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b02f088cef.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="{% static 'catering/css/1.css' %}" rel="stylesheet" type="text/css">
     <title>{% block title %}Главная{% endblock %}</title>
     <style>
-        html {
-            background-image: url("{% static 'catering/bcg_img.jpg' %}");
-        }
+        /*html {*/
+        /*background-image: url("{% static 'catering/bcg_img.jpg' %}");*/
+        /*}*/
     </style>
 </head>
 <body>
 <div class="page-wrapper">
-    <h1 class="visually-hidden">Название сайта</h1>
     <header>
         <nav class="main-nav">
+            <div class="toggle-button" id="toggle">&#9776;</div>
             <div class="menu-wrapper">
-                <div class="left-side">
-                    <label for="toggle" class="toggle-button" id="toggle">&#9776;</label>
-                    <a href="#" class="main-nav__write"><span class="helper"></span><img class="letter-image"
-                                                                                         src="{% static 'catering/letter-image.png' %}"
-                                                                                         alt="catering"></a>
-                </div>
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
                         <a href="#" class="main-nav__link main-nav__link--first">Главная</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">Услуги</a>
-                    </li>
-                    <li class="main-nav__item">
+                        <div class="vertical-line"></div>
                         <a href="#" class="main-nav__link">Меню</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">События</a>
+                        <div class="vertical-line"></div>
+                        <a href="#" class="main-nav__link">Бизнес-Ланч</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">Блог</a>
+                        <div class="vertical-line"></div>
+                        <a href="#" class="main-nav__link">Доставка</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">Контакты</a>
+                        <div class="vertical-line"></div>
+                        <a href="#" class="main-nav__link">Банкеты</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <div class="vertical-line"></div>
+                        <a href="#" class="main-nav__link">Акции</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <div class="vertical-line"></div>
+                        <a href="#" class="main-nav__link main-nav__link--last">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -55,18 +60,26 @@
     <div class="footer-wrapper">
         <footer class="page-footer">
             <div class=" page-footer__item address-info">
-                <p class="address-info__item">Название | Номер телефона</p>
-                <p class="address-info__item">Адрес</p>
+                <p class="address-info__container">
+                    <span class="address-info__item address-info__item--ad-pad">День & Ночь</span>
+                    <span class="address-info__item"> +7-925-517-10-78, +7-980-898-21-37</span>
+                </p>
+                <p class="address-info__container">
+                    <span class="address-info__item">117556, Pоссия, Москва,</span>
+                    <span class="address-info__item">Варшавское шоссе, 91</span>
+                </p>
             </div>
             <div class="page-footer__item socials">
                 <a class="socials__link" href="#">
-                    <img class="socials__social" src="{% static 'catering/vk.png' %}" alt="vk">
+                    <img class="socials__social socials__social--vk" src="{% static 'catering/vk.png' %}" alt="vk">
                 </a>
                 <a class="socials__link" href="#">
-                    <img class="socials__social socials__social--insta" src="{% static 'catering/insta.png' %}" alt="insta">
+                    <img class="socials__social socials__social--insta" src="{% static 'catering/insta.png' %}"
+                         alt="insta">
                 </a>
                 <a class="socials__link" href="#">
-                    <img class="socials__social socials__social--facebook" src="{% static 'catering/fb.png' %}" alt="fb">
+                    <img class="socials__social socials__social--telegram" src="{% static 'catering/telegram.png' %}"
+                         alt="fb">
                 </a>
             </div>
         </footer>

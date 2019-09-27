@@ -1,1 +1,77 @@
 {% extends 'catering/base.html' %}
+{% load static %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block main %}
+<div class="main-wrapper">
+    <div class="slider">
+        <i class="fas fa-arrow-circle-left" id="prev"></i>
+        <i class="fas fa-arrow-circle-right" id="next"></i>
+        <div class="slider__image-wrapper">
+            <div class="slider__content">
+                <img class="slider__image " src="{% static 'catering/1.png' %}" alt="">
+            </div>
+            <div class="slider__content ">
+                <img class="slider__image" src="{% static 'catering/2.png' %}" alt="">
+            </div>
+            <div class="slider__content slider__content--current">
+                <img class="slider__image" src="{% static 'catering/3.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <section class="offers">
+        <article class="offers__article">
+            <div class="offers__text-wrapper">
+                <h2 class="offers__heading">
+                    <span class="heading-text">БИЗНЕС ЛАНЧ</span>
+                </h2>
+                <div class="horizontal-line"></div>
+                <div class="article-text">
+                    <p>C 12-00 до 16-00;</p>
+                    <p>Стоимость 250 рублей;</p>
+                    <p>Первое, второе, салат, компот, булочка;</p>
+                    <p>Разнообразное меню;</p>
+                    <p>Подарки каждому</p>
+                </div>
+            </div>
+            <a href="#" class="offers__button"><span class="button-text">Подробнее ></span></a>
+        </article>
+        <article class="offers__article">
+            <div class="offers__text-wrapper">
+                <h2 class="offers__heading">
+                    <span class="heading-text"><strong>ДОСТАВКА</strong></span>
+                </h2>
+                <div class="horizontal-line"></div>
+                <div class="article-text">
+                    <p>- C 08-00 до 23-00;</p>
+                    <p>- Завтрак, обед, ужин;</p>
+                    <p>- Пицца, хачапури, шаурма;</p>
+                    <p>- Шашлык на углях;</p>
+                    <p>- Бесплатная доставка при заказе от 500руб.</p>
+                </div>
+            </div>
+            <a href="#" class="offers__button"><span class="button-text">Подробнее ></span></a>
+        </article>
+        <article class="offers__article">
+            <div class="offers__text-wrapper">
+                <h2 class="offers__heading">
+                    <span class="heading-text">БАНКЕТ ПОД КЛЮЧ</span>
+                </h2>
+                <div class="horizontal-line"></div>
+                <div class="article-text">
+                    <p>- Банкет, юбилей, торжество;</p>
+                    <p>- Специальное предложение по алкоголю;</p>
+                    <p>- Живая музыка, караоке;</p>
+                    <p>- Скидка в день рождения 20%;</p>
+                    <p>- Зал до 70 посадочных мест;</p>
+                    <p>- Заказ от 600 руб. за гостя;</p>
+                </div>
+            </div>
+            <a href="#" class="offers__button"><span class="button-text">Подробнее ></span></a>
+        </article>
+    </section>
+</div>
+{% endblock %}

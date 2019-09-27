@@ -1,0 +1,111 @@
+.address-info {
+    padding-left: 12px;
+}
+
+.footer-wrapper {
+    margin-top: 40px;
+    background-color: #e4322b;
+    width: 100%;
+    border-bottom: 2px solid rgb(73, 40, 116);
+    border-top: 2px solid rgb(73, 40, 116);
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 80px;
+    width: 940px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.socials__social {
+    padding: 3px;
+    margin: auto;
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+}
+
+.socials__social--insta {
+    margin-top: 4px;
+    width: 40px;
+    height: 40px;
+}
+
+.socials__social--telegram {
+    width: 34px;
+    height: 34px;
+}
+
+.socials__social--vk {
+    height: 30px;
+    width: 40px;
+}
+
+.address-info__container {
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+.address-info__item--ad-pad {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.address-info__item {
+    font-family: "Century Gothic", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #f4fdff;
+}
+
+@media only screen and (max-width: 940px) {
+    .page-footer {
+        width: 100%;
+    }
+
+    .address-info__container {
+    padding-left: 0;
+    }
+
+    .address-info__item--ad-pad {
+    margin-right: 20px;
+}
+
+}
+
+@media only screen and (max-width: 640px){
+    .page-footer {
+        height: 150px;
+        width: 100%;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .socials {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .address-info__container {
+        padding: 0;
+    }
+
+    .address-info__item {
+        margin: 0;
+        display: block;
+    }
+
+    .address-info {
+        margin-bottom: 10px;
+    }
+}
+
