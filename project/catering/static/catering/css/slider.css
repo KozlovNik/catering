@@ -11,16 +11,31 @@
 }
 
 .slider {
+    box-sizing: border-box;
+    border: 1px solid #b2b2b2;
     max-width: 910px;
     width: 100%;
     height: auto;
-    margin: 25px auto 0;
+    margin: 0 auto;
     font-size: 0;
     position: relative;
 }
 
 .slider__content {
     display: none;
+}
+
+.slider__motto {
+    padding-left: 40px;
+    padding-right: 10px;
+    background-color: rgba(255, 255, 255, 0.57);
+    bottom: calc(10%);
+    left: 0;
+    display: block;
+    font: 3rem 'Century Gothic';
+    font-weight: 900;
+    color: #e4322b;
+    position: absolute;
 }
 
 .slider__content--current {
@@ -62,6 +77,12 @@
 
     .vertical-line {
         display: none;
+    }
+
+    .slider__motto {
+        font: 5vw 'Century Gothic';
+        position: absolute;
+        font-weight: 900;
     }
 }
 

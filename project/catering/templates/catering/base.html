@@ -9,11 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="{% static 'catering/css/1.css' %}" rel="stylesheet" type="text/css">
     <title>{% block title %}Главная{% endblock %}</title>
-    <style>
-        /*html {*/
-        /*background-image: url("{% static 'catering/bcg_img.jpg' %}");*/
-        /*}*/
-    </style>
+    {% block style %}
+    {% endblock %}
 </head>
 <body>
 <div class="page-wrapper">
@@ -44,6 +41,10 @@
                     <li class="main-nav__item">
                         <div class="vertical-line"></div>
                         <a href="#" class="main-nav__link">Акции</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <div class="vertical-line"></div>
+                        <a href="#" class="main-nav__link">Отзывы</a>
                     </li>
                     <li class="main-nav__item">
                         <div class="vertical-line"></div>

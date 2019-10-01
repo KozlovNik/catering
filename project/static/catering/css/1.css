@@ -1,43 +1,261 @@
 @import url('base.css');
 @import url('navbar.css');
+@import url('footer.css');
+@import url('slider.css');
+/*@font-face {*/
+  /*font-family: 'Century Gothic';*/
+  /*src: local('Century Gothic'),*/
+       /*url('../fonts/11528.ttf') format("truetype");*/
+/*}*/
 
 .visually-hidden {
     font-size: 0;
     clip: rect(0, 0, 0, 0);
 }
 
-.footer-wrapper {
-    margin-top: 40px;
-    background-color: #000000;
-    width: 100%;
-    box-shadow: 0 1px 2px 1px rgba(255,80,0,1);
-    border-bottom: 2px solid rgba(255, 80, 0, 1);
-    border-top: 2px solid rgba(255, 80, 0, 1);
-}
-
-.page-footer {
+.offers {
     display: flex;
-    margin: 0 auto;
-    height: 120px;
-    width: 940px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px auto 0;
+    width: 910px;
 }
 
-.socials__social {
-    color: #1a1a1a;
-    height: 50px;
-    width: 50px;
-    vertical-align: middle;
+.offers__article {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #9c9c9c;
+    width: 270px;
 }
 
-.socials__social--insta {
-    width: 40px;
+.offers__text-wrapper {
+    opacity: 0.9;
+    background-color: #ffffff;
+    min-height: 230px;
+    width: 100%;
+}
+
+.offers__button {
+    display: table;
+    font: 16px 'Century Gothic';
+    font-weight: 500;
+    color: white;;
+    text-decoration: none;
+    background-color: #e4322b;
     height: 40px;
-    vertical-align: middle;
-    margin-left: -5px;
+    width: 100%;
+    transition: 0.1s;
+    transition-delay: 0.1s;
 }
 
-@media only screen and (max-width: 939px) {
-    .page-footer {
+.offers__button:hover {
+    transition: 0.1s;
+    transition-delay: 0.1s;
+    color: white;
+}
+
+.button-text {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    padding-left:25px;
+}
+
+.button-text:hover {
+    background-color: #9b3733;
+}
+
+.button-text:active {
+    background-color: #9b201c;
+}
+
+.offers__heading {
+    height: 40px;
+    overflow: hidden;
+}
+
+.heading-text {
+    color: #e4322b;
+    font-weight: 900;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    padding-top: 15px;
+}
+
+.horizontal-line {
+    margin: 0 auto;
+    width: 80%;
+    border: 0;
+    border-top: 2px solid #492874;
+}
+
+.article-text {
+    position: relative;
+    padding: 15px 15px 15px 25px;
+}
+
+.article-text p {
+    padding-left: 12px;
+    font: 14px 'Century Gothic';
+    font-weight: 700;
+    color: #492874;
+    margin-bottom: 6px;
+}
+
+.circle:before {
+    left: 25px;
+    position: absolute;
+    content: ' \25CF';
+    font-size: 15px;
+}
+
+.offers__heading {
+    position: relative;
+}
+
+.heading-circle-after:after {
+    color: green;
+    right: 25px;
+    position: absolute;
+    content: ' \25CF';
+    font-size: 15px;
+}
+
+.heading-circle-before:before {
+    color: green;
+    left: 25px;
+    position: absolute;
+    content: ' \25CF';
+    font-size: 15px;
+}
+
+.heading-circle:after {
+    color: green;
+    right: 25px;
+    position: absolute;
+    content: ' \25CF';
+    font-size: 15px;
+}
+
+.heading-circle-middle:after {
+    padding: 0 5px;
+    color: green;
+    right: 50px;
+    content: ' \25CF';
+    font-size: 15px;
+}
+
+
+@media only screen and (max-width: 910px) {
+    .offers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px auto 0;
         width: 100%;
     }
+
+    .offers__text-wrapper {
+        opacity: 0.9;
+        background-color: #ffffff;
+        width: 100%;
+    }
+
+    .offers__button {
+        width: 100%;
+        transition: 0.1s;
+        transition-delay: 0.1s;
+    }
+
+    .offers__button:hover {
+        transition: 0.1s;
+        transition-delay: 0.1s;
+        color: white;
+    }
+
+    .offers__heading {
+        font: 26px 'Courier New';
+        color: black;
+        overflow: hidden;
+    }
+
+    .heading-text {
+        display: block;
+        padding: 15px 0 0 15px;
+    }
 }
+
+@media only screen and (max-width: 835px) {
+    .offers__article {
+        width: 100%;
+        margin: 0 30px 20px
+    }
+
+    .circle:before {
+        left: 45px;
+    }
+
+    .article-text p {
+        padding-left: 40px;
+        font-size: 18px;
+    }
+
+    .horizontal-line {
+        width: 85%;
+    }
+
+    .button-text {
+        padding-left: 45px;
+    }
+
+    .heading-circle-after:after {
+        position: static;
+    }
+
+    .heading-circle-before:before {
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .offers {
+        width: 100%;
+    }
+
+    .offers__article {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .article-text p {
+        padding-left: 15px;
+        font-size: 16px;
+    }
+
+    .circle:before {
+        left: 20px;
+    }
+
+    .heading-circle-after:after {
+        position: absolute;
+        right: 20px;
+    }
+
+    .heading-circle-before:before {
+        position: absolute;
+        left: 20px;
+    }
+
+    .button-text {
+        padding-left: 20px;
+    }
+
+    .horizontal-line {
+        width: 87%;
+    }
+}
+

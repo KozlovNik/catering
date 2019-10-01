@@ -9,7 +9,7 @@ humburgerMenu.addEventListener('click', function (event) {
     }
     else {
         h[0].style.display = 'block';
-        h[0].style.zIndex = '2';
+        h[0].style.zIndex = '10';
     }
 });
 
