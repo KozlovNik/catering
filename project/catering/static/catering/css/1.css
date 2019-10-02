@@ -90,14 +90,11 @@ url('../4285.ttf') format("truetype");
 }
 
 .main-wrapper {
+    position: relative;
     min-height: calc(100vh - 180px);
     display: block;
-    padding-bottom: 110px;
-    padding-top: 25px;
-}
-
-.main-wrapper {
-    position: relative;
+    padding-bottom: 90px;
+    padding-top: 20px;
 }
 
 .main-wrapper:before {
@@ -123,7 +120,7 @@ url('../4285.ttf') format("truetype");
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 25px auto 0;
+    margin: 20px auto 0;
     width: 910px;
 }
 
@@ -138,7 +135,7 @@ url('../4285.ttf') format("truetype");
 .offers__text-wrapper {
     opacity: 0.9;
     background-color: rgba(255, 255, 255, 0.71);
-    min-height: 230px;
+    min-height: 210px;
     width: 100%;
 }
 
@@ -200,7 +197,7 @@ url('../4285.ttf') format("truetype");
 
 .article-text {
     position: relative;
-    padding: 15px 15px 15px 25px;
+    padding: 5px 15px 5px 25px;
 }
 
 .article-text p {

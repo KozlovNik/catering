@@ -12,9 +12,10 @@
 
 .main-nav {
     background-color: #e4322b;
+    box-sizing: border-box;
     border-bottom: 2px solid rgb(73, 40, 116);
     border-top: 2px solid rgb(73, 40, 116);
-    height: 70px;
+    height: 60px;
 }
 
 .menu-wrapper {
@@ -47,7 +48,7 @@
 }
 
 .vertical-line {
-    height: 40px;
+    height: 35px;
     border: 0;
     border-left: 2px solid #fadf11;
 }
@@ -90,6 +91,10 @@
 
     #toggle {
         display: block;
+    }
+
+    .main-nav {
+        height: 80px;
     }
 
     .toggle-button {
