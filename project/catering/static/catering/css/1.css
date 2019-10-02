@@ -2,16 +2,97 @@
 @import url('navbar.css');
 @import url('footer.css');
 @import url('slider.css');
-/*@font-face {*/
-/*font-family: 'Century Gothic';*/
-/*src: local('Century Gothic'),*/
-/*url('../fonts/11528.ttf') format("truetype");*/
+@font-face {
+font-family: 'Aquarelle';
+src: local('Aquarelle'),
+url('../4285.ttf') format("truetype");
+}
+
+.mini-logo {
+    top: 8px;
+    left: 40px;
+    position: absolute;
+    display: none;
+    align-items: center;
+    font: 25px 'Aquarelle';
+    color: #4d2798;
+}
+
+.mini-logo-image {
+    width: 60px;
+    height: 60px;
+}
+
+/*main {*/
+    /*pa*/
 /*}*/
+.map-wrapper {
+    margin-top: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+}
+.map {
+    width: 100%;
+}
+
+.generic-page {
+    box-sizing: border-box;
+    max-width: 910px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.generic-page__header {
+    font: 40px 'Century Gothic';
+    font-weight: 600;
+    margin: 15px 0 25px;
+    color: #4d2798;
+}
+
+.generic-page__paragraph {
+    font: 18px 'Century Gothic';
+}
+
+.page-wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 940px) {
+
+    .generic-page__header {
+        font-size: 30px;
+        margin: 15px 30px 10px;
+    }
+    .generic-page__paragraph {
+        display: flex;
+        flex-wrap: wrap;
+        font: 18px 'Century Gothic';
+        margin: 0 30px;
+    }
+
+    .map-wrapper {
+        margin: 25px 30px;
+        position: relative;
+        padding-bottom: 50%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
 
 .main-wrapper {
+    min-height: calc(100vh - 180px);
     display: block;
-    /*background-color: indianred;*/
-    padding-bottom: 25px;
+    padding-bottom: 110px;
     padding-top: 25px;
 }
 
@@ -28,7 +109,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    opacity: 0.1;
+    opacity: 0.15;
     width: 100%;
     height: 100%;
 }
@@ -56,7 +137,7 @@
 
 .offers__text-wrapper {
     opacity: 0.9;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.71);
     min-height: 230px;
     width: 100%;
 }
@@ -67,7 +148,7 @@
     font-weight: 500;
     color: white;;
     text-decoration: none;
-    background-color: #e4322b;
+    background-color: rgba(228, 50, 43, 0.71);
     height: 40px;
     width: 100%;
     transition: 0.1s;
@@ -246,6 +327,14 @@
 }
 
 @media only screen and (max-width: 640px) {
+
+    .main-wrapper {
+        min-height: calc(100vh - 180px);
+        display: block;
+        padding-bottom: 175px;
+        padding-top: 25px;
+    }
+
     .offers {
         width: 100%;
     }
@@ -281,6 +370,10 @@
 
     .horizontal-line {
         width: 87%;
+    }
+
+    .mini-logo {
+        display: flex;
     }
 }
 

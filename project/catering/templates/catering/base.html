@@ -4,23 +4,32 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/b02f088cef.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="http://allfont.ru/allfont.css?fonts=aquarelle" rel="stylesheet" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="{% static 'catering/css/1.css' %}" rel="stylesheet" type="text/css">
     <title>{% block title %}Главная{% endblock %}</title>
-    {% block style %}
-    {% endblock %}
+    <style>
+        .main-wrapper:before {
+            background-image: url("{% static 'catering/fon.jpg' %}");
+        }
+    </style>
 </head>
 <body>
 <div class="page-wrapper">
     <header>
         <nav class="main-nav">
+            <div class="mini-logo">
+            <span class="mini-logo-legend">День</span>
+            <img class="mini-logo-image" src="{% static 'catering/logo.png' %}" alt="">
+            <span class="mini-logo-legend">Ночь</span>
+        </div>
             <div class="toggle-button" id="toggle">&#9776;</div>
             <div class="menu-wrapper">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
-                        <a href="#" class="main-nav__link main-nav__link--first">Главная</a>
+                        <a href="{% url 'index' %}" class="main-nav__link main-nav__link--first">Главная</a>
                     </li>
                     <li class="main-nav__item">
                         <div class="vertical-line"></div>
@@ -48,15 +57,17 @@
                     </li>
                     <li class="main-nav__item">
                         <div class="vertical-line"></div>
-                        <a href="#" class="main-nav__link main-nav__link--last">Контакты</a>
+                        <a href="{% url 'contacts' %}" class="main-nav__link main-nav__link--last">Контакты</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
+    <div class="main-wrapper">
         {% block main %}
         {% endblock %}
+    </div>
     </main>
     <div class="footer-wrapper">
         <footer class="page-footer">

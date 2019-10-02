@@ -5,95 +5,94 @@
 
 {% endblock %}
 {% block style %}
-    <style>
-        .main-wrapper:before {
-            background-image: url("{% static 'catering/fon.jpg' %}");
-        }
-    </style>
+
 {% endblock %}
 
 {% block main %}
-    <div class="main-wrapper">
-        <div class="slider">
-            <p class="slider__motto">ВКУСНО КАК ДОМА</p>
-            <i class="fas fa-arrow-circle-left" id="prev"></i>
-            <i class="fas fa-arrow-circle-right" id="next"></i>
-            <div class="slider__image-wrapper">
-                <div class="slider__content">
-                    <img class="slider__image " src="{% static 'catering/1.jpg' %}" alt="" width="940px" height="491px">
-                </div>
-                <div class="slider__content ">
-                    <img class="slider__image" src="{% static 'catering/2.jpg' %}" alt="">
-                </div>
-                <div class="slider__content slider__content--current">
-                    <img class="slider__image" src="{% static 'catering/3.jpg' %}" alt="">
-                </div>
+    <div class="slider">
+        <div class="logo">
+            <span class="logo-legend">День</span>
+            <img class="logo-image" src="{% static 'catering/logo.png' %}" alt="">
+            <span class="logo-legend">Ночь</span>
+        </div>
+        <p class="slider__motto">ВКУСНО КАК ДОМА</p>
+        <i class="fas fa-arrow-circle-left" id="prev"></i>
+        <i class="fas fa-arrow-circle-right" id="next"></i>
+        <div class="slider__image-wrapper">
+            <div class="slider__content">
+                <img class="slider__image " src="{% static 'catering/3.jpg' %}" alt="" width="940px" height="491px">
+            </div>
+            <div class="slider__content ">
+                <img class="slider__image" src="{% static 'catering/2.jpg' %}" alt="">
+            </div>
+            <div class="slider__content slider__content--current">
+                <img class="slider__image" src="{% static 'catering/1.jpg' %}" alt="">
             </div>
         </div>
-        <section class="offers">
-            <article class="offers__article">
-                <div class="offers__text-wrapper">
-                    <div class="offers__heading">
-                        <h2 class="heading-text">
-                            <span class="heading-circle-before"></span>
-                            БИЗНЕС
-                            <span class="heading-circle-middle"></span>
-                            ЛАНЧ
-                            <span class="heading-circle-after"></span>
-                        </h2>
-                    </div>
-                    <div class="horizontal-line"></div>
-                    <div class="article-text">
-                        <p><span class="circle"></span> C 12-00 до 16-00;</p>
-                        <p><span class="circle"></span> Стоимость 250 рублей;</p>
-                        <p><span class="circle"></span> Первое, второе, салат, компот, булочка;</p>
-                        <p><span class="circle"></span> Разнообразное меню;</p>
-                        <p><span class="circle"></span> Подарки каждому</p>
-                    </div>
-                </div>
-                <a href="#" class="offers__button"><span class="button-text">Подробнее ></span></a>
-            </article>
-            <article class="offers__article">
-                <div class="offers__text-wrapper">
-                    <div class="offers__heading">
-                        <h2 class="heading-text">
-                            <span class="heading-circle-before"></span>
-                            ДОСТАВКА
-                            <span class="heading-circle-after"></span>
-                        </h2>
-                    </div>
-                    <div class="horizontal-line"></div>
-                    <div class="article-text">
-                        <p><span class="circle"></span> C 08-00 до 23-00;</p>
-                        <p><span class="circle"></span> Завтрак, обед, ужин;</p>
-                        <p><span class="circle"></span> Пицца, хачапури, шаурма;</p>
-                        <p><span class="circle"></span> Шашлык на углях;</p>
-                        <p><span class="circle"></span> Бесплатная доставка при заказе от 500руб.</p>
-                    </div>
-                </div>
-                <a href="#" class="offers__button"><span class="button-text">Подробнее ></span></a>
-            </article>
-            <article class="offers__article">
-                <div class="offers__text-wrapper">
-                    <div class="offers__heading">
-                        <h2 class="heading-text">
-                            <span class="heading-circle-before"></span>
-                            БАНКЕТ ПОД КЛЮЧ
-                            <span class="heading-circle-after"></span>
-                        </h2>
-                    </div>
-                    <div class="horizontal-line"></div>
-                    <div class="article-text">
-                        <p><span class="circle"></span> Банкет, юбилей, торжество;</p>
-                        <p><span class="circle"></span> Специальное предложение по алкоголю;</p>
-                        <p><span class="circle"></span> Живая музыка, караоке;</p>
-                        <p><span class="circle"></span> Скидка в день рождения 20%;</p>
-                        <p><span class="circle"></span> Зал до 70 посадочных мест;</p>
-                        <p><span class="circle"></span> Заказ от 600 руб. за гостя;</p>
-                    </div>
-                </div>
-                <a href="#" class="offers__button"><span class="button-text">Подробнее ></span></a>
-            </article>
-        </section>
     </div>
+    <section class="offers">
+        <article class="offers__article">
+            <div class="offers__text-wrapper">
+                <div class="offers__heading">
+                    <h2 class="heading-text">
+                        <span class="heading-circle-before"></span>
+                        БИЗНЕС
+                        <span class="heading-circle-middle"></span>
+                        ЛАНЧ
+                        <span class="heading-circle-after"></span>
+                    </h2>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="article-text">
+                    <p><span class="circle"></span> C 12-00 до 16-00;</p>
+                    <p><span class="circle"></span> Стоимость 250 рублей;</p>
+                    <p><span class="circle"></span> Первое, второе, салат, компот, булочка;</p>
+                    <p><span class="circle"></span> Разнообразное меню;</p>
+                    <p><span class="circle"></span> Подарки каждому</p>
+                </div>
+            </div>
+            <a href="#" class="offers__button"><span class="button-text">Подробнее ></span></a>
+        </article>
+        <article class="offers__article">
+            <div class="offers__text-wrapper">
+                <div class="offers__heading">
+                    <h2 class="heading-text">
+                        <span class="heading-circle-before"></span>
+                        ДОСТАВКА
+                        <span class="heading-circle-after"></span>
+                    </h2>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="article-text">
+                    <p><span class="circle"></span> C 08-00 до 23-00;</p>
+                    <p><span class="circle"></span> Завтрак, обед, ужин;</p>
+                    <p><span class="circle"></span> Пицца, хачапури, шаурма;</p>
+                    <p><span class="circle"></span> Шашлык на углях;</p>
+                    <p><span class="circle"></span> Бесплатная доставка при заказе от 500 рублей</p>
+                </div>
+            </div>
+            <a href="#" class="offers__button"><span class="button-text">Подробнее ></span></a>
+        </article>
+        <article class="offers__article">
+            <div class="offers__text-wrapper">
+                <div class="offers__heading">
+                    <h2 class="heading-text">
+                        <span class="heading-circle-before"></span>
+                        БАНКЕТ ПОД КЛЮЧ
+                        <span class="heading-circle-after"></span>
+                    </h2>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="article-text">
+                    <p><span class="circle"></span> Банкет, юбилей, торжество;</p>
+                    <p><span class="circle"></span> Специальное предложение по алкоголю;</p>
+                    <p><span class="circle"></span> Живая музыка, караоке;</p>
+                    <p><span class="circle"></span> Скидка в день рождения 20%;</p>
+                    <p><span class="circle"></span> Зал до 70 посадочных мест;</p>
+                    <p><span class="circle"></span> Заказ от 600 рублей за гостя;</p>
+                </div>
+            </div>
+            <a href="#" class="offers__button"><span class="button-text">Подробнее ></span></a>
+        </article>
+    </section>
 {% endblock %}

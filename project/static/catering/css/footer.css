@@ -3,7 +3,8 @@
 }
 
 .footer-wrapper {
-    margin-top: 40px;
+    bottom: 0;
+    position: absolute;
     background-color: #e4322b;
     width: 100%;
     border-bottom: 2px solid rgb(73, 40, 116);
