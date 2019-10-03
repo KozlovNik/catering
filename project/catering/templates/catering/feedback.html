@@ -1,0 +1,38 @@
+{% extends 'catering/base.html' %}
+{% load static %}
+
+{% block title %}
+
+{% endblock %}
+{% block style %}
+
+{% endblock %}
+
+{% block main %}
+    <div class="mini-logo--transparent">
+        <img class="" src="{% static 'catering/1.png' %}" alt="" width="250px">
+    </div>
+    <div class="generic-page">
+        <h1 class="generic-page__header">Отзывы</h1>
+        <button class="feedback-button" id="fb">Оставить отзыв</button>
+        <form id="generic-form" class="generic-form" method="post">
+            <div class="generic-form__wrapper">
+                <div class="close"></div>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input class="generic-form__submit-button" type="submit">
+            </div>
+        </form>
+        <div class="common-feedback-wrapper">
+            {% for message in messages %}
+                <div class="user-feedback-wrapper">
+                    <p class="generic-page__paragraph">{{ message.usr_name }}, </p>
+                    <p class="generic-page__paragraph"> {{ message.date }}</p>
+                </div>
+                <p class="generic-page__paragraph">{{ message.message }}</p>
+                <hr>
+            {% endfor %}
+        </div>
+    </div>
+    <script src="{% static 'catering/javascript/popup_form.js' %}"></script>
+{% endblock %}

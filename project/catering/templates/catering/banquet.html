@@ -1,0 +1,36 @@
+{% extends 'catering/base.html' %}
+{% load static %}
+
+{% block title %}
+
+{% endblock %}
+{% block style %}
+
+{% endblock %}
+
+{% block main %}
+    <div class="mini-logo--transparent">
+        <img class="" src="{% static 'catering/1.png' %}" alt="" width="250px">
+    </div>
+    <div class="generic-page">
+        <h1 class="generic-page__header">Банкеты</h1>
+        <p class="generic-page__paragraph">
+            Банкетное меню от 600 рублей на человека. Уютный зал может вместить до 70 гостей.
+        </p>
+        <p class="generic-page__paragraph">
+            Свой алкоголь бесплатно (с чеком). Можно принести с собой фрукты, икру, торт.
+        </p>
+        <p class="generic-page__paragraph">
+            Предоплата: первый взнос (бронь) - 50% от суммы заказа, оставшаяся сумма в начале банкета.
+        </p>
+        <p class="generic-page__paragraph">
+            Проценты за обслуживание: 10% от общей стоимости банкета.
+        </p>
+        <p class="generic-page__paragraph">
+            <b>Скидка</b> в честь <b>Дня рождения 20 %</b>. Действует в течение 7 дней после знаменательной даты.
+        </p>
+        <p class="generic-page__paragraph">
+            <b>При заказе</b> банкета <b>от 100 000 рублей </b>в подарок ящик шампанского.
+        </p>
+    </div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'catering/base.html' %}
+{% load static %}
+
+{% block title %}
+
+{% endblock %}
+{% block style %}
+
+{% endblock %}
+
+{% block main %}
+    <div class="mini-logo--transparent">
+        <img class="" src="{% static 'catering/1.png' %}" alt="" width="250px">
+    </div>
+    <div class="generic-page">
+        <h1 class="generic-page__header">Доставка</h1>
+        <p class="generic-page__paragraph">
+            Мы предлагаем доставку любых блюд, приготовленных с душой, в офис или на дом.
+        </p>
+        <p class="generic-page__paragraph">
+            Услуга по Доставке готовых блюд включает в себя:
+        </p>
+        <ul class="generic-page__list generic-list">
+            <li class="generic-list__item">оперативную обработку заявки;</li>
+            <li class="generic-list__item">подбор блюд с учетом предпочтений клиента;</li>
+            <li class="generic-list__item">процесс приготовления;</li>
+            <li class="generic-list__item">доставку заказов в удобное клиенту место и время.</li>
+        </ul>
+        <p class="generic-page__paragraph">
+            <b>Бесплатная доставка при заказе от 500 рублей</b>
+        </p>
+        <p class="generic-page__paragraph">
+            Оставить комментарий вы можете в разделе «Отзывы». Каждый комментарий важен для нас.
+        </p>
+    </div>
+{% endblock %}

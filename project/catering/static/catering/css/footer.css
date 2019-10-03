@@ -75,18 +75,20 @@
     }
 
     .address-info__container {
-    padding-left: 0;
+        padding-left: 0;
     }
 
     .address-info__item--ad-pad {
-    margin-right: 20px;
-}
+        margin-right: 20px;
+    }
 
 }
 
 @media only screen and (max-width: 640px){
-    .page-footer {
+    .footer-wrapper {
         height: 150px;
+    }
+    .page-footer {
         width: 100%;
         flex-direction: column-reverse;
         flex-wrap: wrap;

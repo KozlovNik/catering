@@ -93,6 +93,7 @@
         display: block;
     }
 
+
     .main-nav {
         height: 80px;
     }
@@ -133,6 +134,10 @@
 
     .menu-wrapper {
         width: 100%;
+    }
+
+    .vertical-line {
+        display: none;
     }
 }
 @media only screen and (max-width: 640px) {

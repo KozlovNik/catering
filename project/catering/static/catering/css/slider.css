@@ -25,7 +25,7 @@
     padding-right: 20px;
     padding-left: 40px;
     background-color: rgba(255, 255, 255, 0.47);
-    top: 40px;
+    top: 30px;
     left: 0;
     position: absolute;
     display: flex;
@@ -40,7 +40,7 @@
 .logo-legend {
     color: #46229b;
     font-family: 'Aquarelle', Arial;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 3rem;
 }
 
@@ -95,12 +95,12 @@
 @media only screen and (max-width: 940px) {
     .slider {
         max-width: 940px;
-        margin: 0;
     }
 
-    .vertical-line {
-        display: none;
+    .slider__image {
+        width: 100%;
     }
+
 
     .slider__motto {
         font: 5vw 'Century Gothic';

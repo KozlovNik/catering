@@ -1,0 +1,30 @@
+{% extends 'catering/base.html' %}
+{% load static %}
+
+{% block title %}
+
+{% endblock %}
+{% block style %}
+
+{% endblock %}
+
+{% block main %}
+    <div class="mini-logo--transparent">
+        <img class="" src="{% static 'catering/1.png' %}" alt="" width="250px">
+    </div>
+    <div class="generic-page">
+        <h1 class="generic-page__header">Акции</h1>
+        <p class="generic-page__paragraph">
+            Скидка в честь Дня рождения 20 %. Действует в течение 7 дней после знаменательной даты.
+        </p>
+        <p class="generic-page__paragraph">
+            Скидка предъявителю купона 10 %.
+        </p>
+        <p class="generic-page__paragraph">
+            Скидка по дисконтной карте 10 %, 20 %, 30 %.
+        </p>
+        <p class="generic-page__paragraph">
+            При заказе банкета от 100 000 рублей в подарок ящик шампанского.
+        </p>
+    </div>
+{% endblock %}
