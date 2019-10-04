@@ -1,14 +1,22 @@
 let humburgerMenu = document.getElementById('toggle');
 
 
-let h = document.getElementsByClassName('main-nav__list');
+let menu = document.getElementsByClassName('main-nav__list')[0];
 
 humburgerMenu.addEventListener('click', function (event) {
-    if (h[0].style.display === 'block') {
-        h[0].style.display = 'none';
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
     }
     else {
-        h[0].style.display = 'block';
-        h[0].style.zIndex = '10';
+        menu.style.display = 'block';
+        menu.style.zIndex = '10';
+    }
+});
+
+window.addEventListener('click', function (event) {
+    console.log(event.target);
+    console.log(menu.contains(event.target));
+    if (event.target !== menu && menu.style.display !== 'none' && !menu.contains(event.target) && event.target !== humburgerMenu){
+        menu.style.display = 'none'
     }
 });

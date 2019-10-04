@@ -9,6 +9,7 @@ src: local('Aquarelle'),
 url('../4285.ttf') format("truetype");
 }
 
+
 .mini-logo {
     background-color: #fcfdfe;
     text-align: center;
@@ -72,13 +73,17 @@ url('../4285.ttf') format("truetype");
     padding-bottom: 10px;
 }
 
+.hr-wrapper {
+    width: 100%;
+}
+
 .page-wrapper {
     position: relative;
     min-height: 100vh;
 }
 
-.user-feedback-wrapper {
-    display: flex;
+.generic-page__paragraph--custom {
+    display: inline-block;
 }
 
 .common-feedback-wrapper {
@@ -121,6 +126,11 @@ url('../4285.ttf') format("truetype");
         left: 0;
         width: 100% !important;
         height: 100% !important;
+    }
+
+    .hr-wrapper {
+        margin: 0 30px;
+        width: 90%;
     }
 }
 

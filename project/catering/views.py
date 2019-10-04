@@ -33,7 +33,7 @@ def feedback(request):
     form = FeedbackForm(request.POST or None)
     if form.is_valid():
         form.save()
-    messages = FeedBack.objects.all().order_by('-date')
+    messages = FeedBack.objects.all().order_by('-date')[:5]
     context = {
         'form': form,
         'messages': messages,

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.conf.urls import url
 from catering import views
 
@@ -10,3 +11,4 @@ urlpatterns = [
     url(r'^discounts/$', views.discounts, name='discounts'),
     url(r'^feedback/$', views.feedback, name='feedback'),
 ]
+e

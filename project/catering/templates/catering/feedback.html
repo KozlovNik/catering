@@ -14,7 +14,9 @@
     </div>
     <div class="generic-page">
         <h1 class="generic-page__header">Отзывы</h1>
-        <button class="feedback-button" id="fb">Оставить отзыв</button>
+        <span class="feedback-button" id="fb">
+            <span class="feedback-button__content">Оставить отзыв</span>
+        </span>
         <form id="generic-form" class="generic-form" method="post">
             <div class="generic-form__wrapper">
                 <div class="close"></div>
@@ -25,12 +27,12 @@
         </form>
         <div class="common-feedback-wrapper">
             {% for message in messages %}
+                <div class="hr-wrapper"><hr></div>
                 <div class="user-feedback-wrapper">
-                    <p class="generic-page__paragraph">{{ message.usr_name }}, </p>
-                    <p class="generic-page__paragraph"> {{ message.date }}</p>
+                    <p class="generic-page__paragraph generic-page__paragraph--custom">{{ message.usr_name }}, </p>
+                    <p class="generic-page__paragraph generic-page__paragraph--custom"> {{ message.date|date:"d.m.Y h:m" }}</p>
                 </div>
                 <p class="generic-page__paragraph">{{ message.message }}</p>
-                <hr>
             {% endfor %}
         </div>
     </div>
