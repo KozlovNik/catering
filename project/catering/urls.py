@@ -11,4 +11,3 @@ urlpatterns = [
     url(r'^discounts/$', views.discounts, name='discounts'),
     url(r'^feedback/$', views.feedback, name='feedback'),
 ]
-e
