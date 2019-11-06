@@ -27,4 +27,15 @@
             При заказе банкета от 100 000 рублей в подарок ящик шампанского.
         </p>
     </div>
+    <div class="links-bottom">
+        <hr class="links-bottom__hr">
+        <a href="{% url 'delivery' %}" class="links-bottom__item">
+            <img class="links-bottom__image" src="{% static 'catering/delivery.png' %}" alt="">
+            <span class="links-bottom__text">Доставка</span>
+        </a>
+        <a href="{% url 'contacts' %}" class="links-bottom__item">
+            <img class="links-bottom__image" src="{% static 'catering/contacts.png' %}" alt="">
+            <span class="links-bottom__text"> Контакты</span>
+        </a>
+    </div>
 {% endblock %}

@@ -29,10 +29,10 @@
             {% for message in messages %}
                 <div class="hr-wrapper"><hr></div>
                 <div class="user-feedback-wrapper">
-                    <p class="generic-page__paragraph generic-page__paragraph--custom">{{ message.usr_name }}, </p>
-                    <p class="generic-page__paragraph generic-page__paragraph--custom"> {{ message.date|date:"d.m.Y h:m" }}</p>
+                    <p class="generic-page__paragraph--custom">{{ message.usr_name }}, </p>
+                    <p class="generic-page__paragraph--custom"> {{ message.date|date:"d.m.Y H:m" }}</p>
                 </div>
-                <p class="generic-page__paragraph">{{ message.message }}</p>
+                <p class="generic-page__paragraph--custom">{{ message.message }}</p>
             {% endfor %}
         </div>
     </div>

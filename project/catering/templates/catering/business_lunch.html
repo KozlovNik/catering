@@ -33,6 +33,23 @@
             ланчи такие вкусные и нравятся вам!
             <i>Творить шеф-повару интереснее, когда он знает о ваших предпочтениях!</i>
         </p>
-
+        <div class="generic-page__image-container--modified">
+            <img class="generic-page__image--modified" src="{% static 'catering/business-lunch.jpg' %}" alt="">
+        </div>
+    </div>
+    <div class="links-bottom">
+        <hr class="links-bottom__hr">
+        <a href="{% url 'delivery' %}" class="links-bottom__item">
+            <img class="links-bottom__image" src="{% static 'catering/delivery.png' %}" alt="">
+            <span class="links-bottom__text">Доставка</span>
+        </a>
+        <a href="{% url 'discounts' %}" class="links-bottom__item">
+            <img class="links-bottom__image" src="{% static 'catering/discounts.png' %}" alt="">
+            <span class="links-bottom__text">Акции</span>
+        </a>
+        <a href="{% url 'contacts' %}" class="links-bottom__item">
+            <img class="links-bottom__image" src="{% static 'catering/contacts.png' %}" alt="">
+            <span class="links-bottom__text"> Контакты</span>
+        </a>
     </div>
 {% endblock %}

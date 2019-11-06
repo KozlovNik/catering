@@ -12,9 +12,10 @@
 
 .main-nav {
     background-color: #e4322b;
+    box-sizing: border-box;
     border-bottom: 2px solid rgb(73, 40, 116);
     border-top: 2px solid rgb(73, 40, 116);
-    height: 70px;
+    height: 60px;
 }
 
 .menu-wrapper {
@@ -47,7 +48,7 @@
 }
 
 .vertical-line {
-    height: 40px;
+    height: 35px;
     border: 0;
     border-left: 2px solid #fadf11;
 }
@@ -92,6 +93,11 @@
         display: block;
     }
 
+
+    .main-nav {
+        height: 80px;
+    }
+
     .toggle-button {
         right: 5%;
         top: 15px;
@@ -123,11 +129,15 @@
 
     .main-nav__item {
         border: 2px solid white;
-        background-color: #492874;
+        background-color: rgb(228, 132, 138);
     }
 
     .menu-wrapper {
         width: 100%;
+    }
+
+    .vertical-line {
+        display: none;
     }
 }
 @media only screen and (max-width: 640px) {

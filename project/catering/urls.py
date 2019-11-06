@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^banquet/$', views.banquet, name='banquet'),
     url(r'^discounts/$', views.discounts, name='discounts'),
     url(r'^feedback/$', views.feedback, name='feedback'),
+    url(r'^menu/$', views.menu, name='menu'),
 ]

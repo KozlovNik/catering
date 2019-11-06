@@ -29,6 +29,10 @@ def discounts(request):
     return render(request, 'catering/discounts.html')
 
 
+def menu(request):
+    return render(request, 'catering/menu.html')
+
+
 def feedback(request):
     form = FeedbackForm(request.POST or None)
     if form.is_valid():

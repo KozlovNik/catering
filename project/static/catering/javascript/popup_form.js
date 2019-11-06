@@ -4,11 +4,11 @@ let closeButton = document.getElementsByClassName('close')[0],
     html = document.getElementById('modal');
 
 feedbackButton.addEventListener('click', function (event) {
-    event.preventDefault()
-    if (feedbackForm.style.display !== 'block'){
-        feedbackForm.style.display = 'block';
-        html.style.display = 'block'
-    }
+
+   if (feedbackForm.style.display !== 'block'){
+       feedbackForm.style.display = 'block';
+       html.style.display = 'block'
+   }
 });
 
 html.addEventListener('click', function () {
