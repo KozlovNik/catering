@@ -15,8 +15,30 @@
     </div>
     <div class="generic-page">
         <h1 class="generic-page__header">Меню</h1>
+        <div class="category-buttons-wrapper">
+            {% for category in categories %}
+                <button class="category-button" id="{{ category.id }}">{{ category }}</button>
+            {% endfor %}
+        </div>
+        {% for category in categories %}
+            <div class="subcategories" data-category-id="{{ category.id }}">
+                {% for subcat in category.subcategory_set.all %}
+                    <p class="subcategories__subcategory">{{ subcat }}</p>
+                    {% for dish in subcat.menuitem_set.all %}
+                        <div class="subcategories__dish">
+                            <div class="subcategories__left-wrapper">{{ dish.name }}</div>
+                            <div class="subcategories__right-wrapper">
+                                <span>{{ dish.price }} р.</span>
+                                <span>{{ dish.quantity }}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        {% endfor %}
         <div class="generic-page__image-container--modified">
             <img class="generic-page__image--modified" src="{% static 'catering/main-menu.jpg' %}" alt="">
         </div>
     </div>
+    <script src="{% static 'catering/javascript/categories.js' %}"></script>
 {% endblock %}

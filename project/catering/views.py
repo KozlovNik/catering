@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from .models import FeedBack
+from .models import FeedBack, Category, SubCategory, MenuItem
 from .forms import FeedbackForm
 from django.shortcuts import render
 
@@ -30,7 +30,11 @@ def discounts(request):
 
 
 def menu(request):
-    return render(request, 'catering/menu.html')
+    categories = Category.objects.all()
+    context = {
+        'categories': categories,
+    }
+    return render(request, 'catering/menu.html', context)
 
 
 def feedback(request):

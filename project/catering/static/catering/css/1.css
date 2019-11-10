@@ -3,14 +3,28 @@
 @import url('footer.css');
 @import url('slider.css');
 @import url('forms.css');
+@import url('categories.css');
+
 @font-face {
-font-family: 'Aquarelle';
-src: local('Aquarelle'),
-url('../4285.ttf') format("truetype");
+    font-family: 'Aquarelle';
+    src: local('Aquarelle'),
+    url('../4285.ttf') format("truetype");
 }
 
 hr {
     border-top: 1px solid rgba(153, 64, 255, 0.41);
+}
+
+.discounts-image-wrapper {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.discounts-image {
+    display: block;
+    width: calc(50% - 20px);
+    padding: 10px;
 }
 
 .links-bottom {
@@ -39,13 +53,17 @@ hr {
     color: #4d2798;
 }
 
-@media only screen and (max-width: 940px){
+@media only screen and (max-width: 940px) {
     .links-bottom {
         display: flex;
     }
 
     .links-bottom__hr {
         width: 100%;
+    }
+
+    .discounts-image-wrapper {
+        width: 90%;
     }
 }
 
@@ -79,6 +97,7 @@ hr {
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0.18);
 }
+
 .map {
     width: 100%;
 }
@@ -137,7 +156,7 @@ hr {
     width: auto;
 }
 
-@media only screen and (max-width: 940px){
+@media only screen and (max-width: 940px) {
     .generic-page__image-container-outer {
         margin: 0 30px;
         overflow: hidden;
@@ -177,7 +196,6 @@ hr {
 }
 
 
-
 @media only screen and (max-width: 940px) {
 
     .generic-page__header {
@@ -208,6 +226,7 @@ hr {
         height: 0;
         overflow: hidden;
     }
+
     .map {
         position: absolute;
         top: 0;
@@ -281,7 +300,7 @@ hr {
     font-weight: 500;
     color: white;;
     text-decoration: none;
-    background-color: rgba(228, 50, 43, 0.51);
+    background-color: #e4322b;
     height: 40px;
     width: 100%;
     transition: 0.1s;
@@ -289,7 +308,7 @@ hr {
 }
 
 .offers__button:hover {
-    background-color: rgba(155, 55, 51, 0.78);
+    background-color: rgb(255, 19, 0);
     transition: 0.1s;
     color: white;
 }
@@ -513,6 +532,18 @@ hr {
 
     .mini-logo, .mini-logo--transparent {
         display: block;
+    }
+
+    .discounts-image-wrapper {
+        flex-direction: column;
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .discounts-image {
+        padding: 0 0 20px;
+        width: 100%;
     }
 }
 

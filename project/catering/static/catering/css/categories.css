@@ -1,0 +1,54 @@
+.subcategories {
+    display: none;
+}
+
+.category-buttons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-button {
+    width: 50%;
+    height: 30px;
+    background-color: rgb(228, 50, 43);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    cursor: pointer;
+    font: 18px 'Century Gothic';
+}
+
+.category-button:hover {
+    background-color: #9b060b;
+}
+
+.subcategories {
+    margin-top: 20px;
+}
+
+.subcategories__subcategory {
+    font: 20px 'Sentury Gothic', sans-serif;
+    font-weight: bold;
+    color: rgb(228, 50, 43);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: underline solid rgb(228, 50, 43);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.subcategories__dish {
+    display: flex;
+    color: #4d2798;
+    font: 16px 'Century Gothic', sans-serif;
+    font-weight: bold;
+}
+
+.subcategories__left-wrapper {
+    width: 70%;
+}
+
+.subcategories__right-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
