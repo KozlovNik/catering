@@ -25,8 +25,13 @@
                 {% for subcat in category.subcategory_set.all %}
                     <p class="subcategories__subcategory">{{ subcat }}</p>
                     {% for dish in subcat.menuitem_set.all %}
-                        <div class="subcategories__dish">
-                            <div class="subcategories__left-wrapper">{{ dish.name }}</div>
+                        <div class="subcategories__dish dish">
+                            <div class="subcategories__left-wrapper">
+                                <span>{{ dish.name }}</span>
+                                {% if dish.description %}
+                                    <span class="dish__description">{{ dish.description }}</span>
+                                {% endif %}
+                            </div>
                             <div class="subcategories__right-wrapper">
                                 <span>{{ dish.price }} р.</span>
                                 <span>{{ dish.quantity }}</span>

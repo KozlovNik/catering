@@ -12,6 +12,7 @@
     height: 30px;
     background-color: rgb(228, 50, 43);
     color: rgb(255, 255, 255);
+    box-sizing: border-box;
     border: 1px solid white;
     cursor: pointer;
     font: 18px 'Century Gothic';
@@ -36,19 +37,27 @@
     margin: 10px 0;
 }
 
-.subcategories__dish {
+.dish {
     display: flex;
     color: #4d2798;
     font: 16px 'Century Gothic', sans-serif;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .subcategories__left-wrapper {
     width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
 .subcategories__right-wrapper {
     display: flex;
     justify-content: space-between;
     width: 30%;
+}
+
+.dish__description {
+    font: 12px 'Century Gothic', sans-serif;
+    font-weight: bold;
 }
