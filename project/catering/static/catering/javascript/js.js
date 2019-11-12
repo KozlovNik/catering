@@ -4,7 +4,7 @@ let humburgerMenu = document.getElementById('toggle'),
 
 let menu = document.getElementsByClassName('main-nav__list')[0];
 
-humburgerMenu.addEventListener('click', function (event) {
+humburgerMenu.addEventListener('click', function(event) {
     if (currentWidth < MAX_WIDTH) {
         if (menu.style.display === 'block') {
             menu.style.display = 'none';
@@ -15,7 +15,7 @@ humburgerMenu.addEventListener('click', function (event) {
     }
 });
 
-window.addEventListener('click', function (event) {
+window.addEventListener('click', function(event) {
     if (currentWidth < MAX_WIDTH) {
         if (event.target !== menu && menu.style.display !== 'none' && !menu.contains(event.target) && event.target !== humburgerMenu){
             menu.style.display = 'none'
